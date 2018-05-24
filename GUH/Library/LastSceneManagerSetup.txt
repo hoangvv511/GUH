@@ -1,4 +1,10 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Level1.unity
   isLoaded: 0
   isActive: 0
+=======
+- path: Assets/Scenes/MenuChooseLevel.unity
+  isLoaded: 1
+  isActive: 1
+>>>>>>> hieu
