@@ -60,21 +60,21 @@ public class Player : MonoBehaviour
 
         if (myRigibody.velocity.y < 0)
         {
-            myAnimator.SetBool("up", true);
+            myAnimator.SetBool("Up", true);
         }
 
         if (myRigibody.gravityScale < 0)
         {
-            myAnimator.SetBool("up", false);
+            myAnimator.SetBool("Up", false);
             if (myRigibody.velocity.y > 0)
             {
-                myAnimator.SetBool("up", true);
+                myAnimator.SetBool("Up", true);
             }
             if (isGrounded && jump)
             {
                 isGrounded = false;
                 myRigibody.AddForce(new Vector2(0, -jumpForce));
-                myAnimator.SetTrigger("jump");
+                myAnimator.SetTrigger("Jump");
 
             }
 
@@ -93,11 +93,11 @@ public class Player : MonoBehaviour
             {
                 isGrounded = false;
                 myRigibody.AddForce(new Vector2(0, jumpForce));
-                myAnimator.SetTrigger("jump");
+                myAnimator.SetTrigger("Jump");
 
             }
         }
-        myAnimator.SetFloat("speed", Mathf.Abs(horizontal));
+        myAnimator.SetFloat("Speed", Mathf.Abs(horizontal));
 
     }
 
@@ -140,7 +140,7 @@ public class Player : MonoBehaviour
                 if (myRigibody.gravityScale < 0)
                 {
                     isGrounded = false;
-                    myAnimator.SetTrigger("jump");
+                    myAnimator.SetTrigger("Jump");
 
                 }
             }
@@ -174,8 +174,8 @@ public class Player : MonoBehaviour
                 {
                     if (colliders[i].gameObject != gameObject)
                     {
-                        myAnimator.ResetTrigger("jump");
-                        myAnimator.SetBool("up", false);
+                        myAnimator.ResetTrigger("Jump");
+                        myAnimator.SetBool("Up", false);
                         isReverse = true;
                         return true;
 
