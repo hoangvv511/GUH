@@ -4,4 +4,40 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 7765282aa583f1849af6da64d80e2a36
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: a7377930b25d1f7429335858709d0e51
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 2242cf0a35bba9e459803b5eaa9461de
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 7e9ef5fac4f88d54f968ca6c2b69804e
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 482f940e1a085b4438b9fe8d5de3d4bb
+  - enabled: 1
+    path: Assets/Scenes/Level6.unity
+    guid: 696f17c405500494e9c123624b0a9b6e
+  - enabled: 1
+    path: Assets/Scenes/Level7.unity
+    guid: 6412810960e828f4590ae7f183f813d1
+  - enabled: 1
+    path: Assets/Scenes/Level8.unity
+    guid: e6b19857a13ff7549aeeb39cef7478e7
+  - enabled: 1
+    path: Assets/Scenes/Level9.unity
+    guid: 02407c5b22082e94aadbbbee6517e4fd
+  - enabled: 1
+    path: Assets/Scenes/Level10.unity
+    guid: 2820a394cefad174f83e13b3ef83af43
+  - enabled: 1
+    path: Assets/Scenes/LevelMenu.unity
+    guid: 596ed0a84a82b064db5fb4ed9a5ec069
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2b5d9e8fa40faac42ae28e3a9d1e657b
