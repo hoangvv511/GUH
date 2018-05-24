@@ -347,8 +347,11 @@ GameObject:
 =======
   - component: {fileID: 130838911}
   - component: {fileID: 130838910}
+<<<<<<< HEAD
   - component: {fileID: 130838912}
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
+=======
+>>>>>>> parent of 1c31d81... abcd
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -486,6 +489,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+<<<<<<< HEAD
 --- !u!114 &130838912
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
 MonoBehaviour:
@@ -502,6 +506,8 @@ MonoBehaviour:
   smoothTimeY: 0
   vectocity: {x: 0, y: 0}
   player: {fileID: 0}
+=======
+>>>>>>> parent of 1c31d81... abcd
 --- !u!1 &338076523
 GameObject:
   m_ObjectHideFlags: 0

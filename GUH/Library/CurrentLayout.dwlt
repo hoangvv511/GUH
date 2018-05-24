@@ -151,9 +151,13 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 14
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
 >>>>>>> hieu
+=======
+  controlID: 70
+>>>>>>> parent of 1c31d81... abcd
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,9 +196,13 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 15
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
 >>>>>>> hieu
+=======
+  controlID: 16
+>>>>>>> parent of 1c31d81... abcd
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -231,9 +239,13 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 16
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
 >>>>>>> hieu
+=======
+  controlID: 17
+>>>>>>> parent of 1c31d81... abcd
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -263,9 +275,14 @@ MonoBehaviour:
 =======
     width: 345
     height: 465
+<<<<<<< HEAD
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
+=======
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> parent of 1c31d81... abcd
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -551,10 +568,16 @@ MonoBehaviour:
     height: 444
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 1e2c0000
     m_LastClickedID: 11294
     m_ExpandedIDs: a6fbffff00000000
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
+=======
+    m_SelectedIDs: 2a2c0000
+    m_LastClickedID: 11306
+    m_ExpandedIDs: a6fbffff00000000142c00002a2c0000
+>>>>>>> parent of 1c31d81... abcd
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -657,9 +680,13 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: de2a0000
     m_LastClickedID: 10974
+<<<<<<< HEAD
     m_ExpandedIDs: 000000000c280000
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
 >>>>>>> hieu
+=======
+    m_ExpandedIDs: 000000000c28000000ca9a3bffffff7f
+>>>>>>> parent of 1c31d81... abcd
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1041,16 +1068,17 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Materials
   m_ViewMode: 1
   m_StartGridSize: 71
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Materials
   m_LastFoldersGridSize: 71
   m_LastProjectPath: C:\Users\DELL\Desktop\Game\GUH\GUH\GUH
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: ac290000
     m_LastClickedID: 10668
@@ -1058,6 +1086,10 @@ MonoBehaviour:
 =======
     m_SelectedIDs: b6290000
     m_LastClickedID: 10678
+=======
+    m_SelectedIDs: cc280000
+    m_LastClickedID: 10444
+>>>>>>> parent of 1c31d81... abcd
     m_ExpandedIDs: 000000000c28000000ca9a3bffffff7f
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
     m_RenameOverlay:
@@ -1317,8 +1349,12 @@ MonoBehaviour:
 =======
     width: 348
     height: 720
+<<<<<<< HEAD
   m_ScrollPosition: {x: 0, y: 233.95508}
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
+=======
+  m_ScrollPosition: {x: 0, y: 660}
+>>>>>>> parent of 1c31d81... abcd
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
