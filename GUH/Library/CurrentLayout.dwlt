@@ -152,9 +152,13 @@ MonoBehaviour:
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 14
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
 >>>>>>> hieu
+=======
+  controlID: 70
+>>>>>>> parent of 1c31d81... abcd
 =======
   controlID: 70
 >>>>>>> parent of 1c31d81... abcd
@@ -197,9 +201,13 @@ MonoBehaviour:
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 15
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
 >>>>>>> hieu
+=======
+  controlID: 16
+>>>>>>> parent of 1c31d81... abcd
 =======
   controlID: 16
 >>>>>>> parent of 1c31d81... abcd
@@ -240,9 +248,13 @@ MonoBehaviour:
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 16
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
 >>>>>>> hieu
+=======
+  controlID: 17
+>>>>>>> parent of 1c31d81... abcd
 =======
   controlID: 17
 >>>>>>> parent of 1c31d81... abcd
@@ -276,9 +288,14 @@ MonoBehaviour:
     width: 345
     height: 465
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
+=======
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> parent of 1c31d81... abcd
 =======
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
@@ -569,10 +586,16 @@ MonoBehaviour:
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 1e2c0000
     m_LastClickedID: 11294
     m_ExpandedIDs: a6fbffff00000000
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
+=======
+    m_SelectedIDs: 2a2c0000
+    m_LastClickedID: 11306
+    m_ExpandedIDs: a6fbffff00000000142c00002a2c0000
+>>>>>>> parent of 1c31d81... abcd
 =======
     m_SelectedIDs: 2a2c0000
     m_LastClickedID: 11306
@@ -681,9 +704,13 @@ MonoBehaviour:
     m_SelectedIDs: de2a0000
     m_LastClickedID: 10974
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000000c280000
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
 >>>>>>> hieu
+=======
+    m_ExpandedIDs: 000000000c28000000ca9a3bffffff7f
+>>>>>>> parent of 1c31d81... abcd
 =======
     m_ExpandedIDs: 000000000c28000000ca9a3bffffff7f
 >>>>>>> parent of 1c31d81... abcd
@@ -1080,12 +1107,17 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: ac290000
     m_LastClickedID: 10668
     m_ExpandedIDs: 000000000e280000042b000000ca9a3bffffff7f
 =======
     m_SelectedIDs: b6290000
     m_LastClickedID: 10678
+=======
+    m_SelectedIDs: cc280000
+    m_LastClickedID: 10444
+>>>>>>> parent of 1c31d81... abcd
 =======
     m_SelectedIDs: cc280000
     m_LastClickedID: 10444
@@ -1350,8 +1382,12 @@ MonoBehaviour:
     width: 348
     height: 720
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_ScrollPosition: {x: 0, y: 233.95508}
 >>>>>>> 1c31d81a5ec3afa075ab62d282c2f3449f12dd31
+=======
+  m_ScrollPosition: {x: 0, y: 660}
+>>>>>>> parent of 1c31d81... abcd
 =======
   m_ScrollPosition: {x: 0, y: 660}
 >>>>>>> parent of 1c31d81... abcd
