@@ -86,13 +86,9 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("flag1"))
+        if (collision.collider.CompareTag("flag2"))
         {
-            if (collision.collider.CompareTag("spike"))
-            {
-                myAnimator.SetBool("Die", true);
-                myRigibody.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
-            }
+          
             gameObject.GetComponent<CompleteController>().ShowTheMenu();
             if (score >= scoremap1)
             {
@@ -102,6 +98,11 @@ public class Player : MonoBehaviour
                 highscore = scoremap1;
                 PlayerPrefs.SetInt("highscore", highscore);
             }
+        }
+        if (collision.collider.CompareTag("spike"))
+        {
+            myAnimator.SetBool("Die", true);
+            myRigibody.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
         }
     }
 

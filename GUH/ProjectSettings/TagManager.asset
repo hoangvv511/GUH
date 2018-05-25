@@ -18,6 +18,7 @@ TagManager:
   - Shoot
   - Gun
   - Range
+  - flag2
   layers:
   - Default
   - TransparentFX
