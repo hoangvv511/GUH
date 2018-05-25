@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-
+    public Duck duck;
     private Rigidbody2D myRigibody;
     [SerializeField]
     private float movementSpeed;
@@ -33,12 +34,26 @@ public class Player : MonoBehaviour
 
     public Animator anim;
 
+    public int score = 0;
+    public int highscore;
+    public int scoremap1;
+    public SoundManager sound;
+    public float lifeTime = 2;
+
     // Use this for initialization
     void Start()
     {
+        highscore = PlayerPrefs.GetInt("highscore");
+        scoremap1 = PlayerPrefs.GetInt("scoremap1");
+        if (highscore == null)
+            highscore = 0;
+        if (scoremap1 == null)
+            scoremap1 = 0;
         facingRight = true;
         myRigibody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        duck = GetComponent<Duck>();
+        sound = GameObject.FindGameObjectWithTag("sound").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -50,6 +65,12 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (myAnimator.GetBool("Die").Equals(true))
+        {
+            lifeTime -= Time.deltaTime;
+            if (lifeTime <= 1.5f)
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
         //horizontal = Input.GetAxis("Horizontal");
         Move(horizontal);
         isGrounded = IsGrounded();
@@ -64,15 +85,30 @@ public class Player : MonoBehaviour
     {
         if (collision.collider.CompareTag("flag1"))
         {
+            if (collision.collider.CompareTag("spike"))
+            {
+                myAnimator.SetBool("Die", true);
+                myRigibody.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+            }
             gameObject.GetComponent<CompleteController>().ShowTheMenu();
-            //if (score >= scoremap1)
-            //{
-            //    scoremap1 = score;
-            //    PlayerPrefs.SetInt("scoremap1", scoremap1);
+            if (score >= scoremap1)
+            {
+                scoremap1 = score;
+                PlayerPrefs.SetInt("scoremap1", scoremap1);
 
-            //    highscore = scoremap1;
-            //    PlayerPrefs.SetInt("highscore", highscore);
-            //}
+                highscore = scoremap1;
+                PlayerPrefs.SetInt("highscore", highscore);
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("duck"))
+        {
+            sound.PlaySound("item");
+            score += 1;
+
         }
     }
 
