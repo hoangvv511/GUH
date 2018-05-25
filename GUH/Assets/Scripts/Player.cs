@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
     private Animator myAnimator;
     [SerializeField]
     private Transform[] groundPoints;
-
     [SerializeField]
     private float groundRadius;
     [SerializeField]
@@ -28,6 +27,11 @@ public class Player : MonoBehaviour
     [SerializeField]
     private bool airControl;
 
+    public float horizontal;
+    public bool isPressJump;
+    public bool isPressChangeGravity;
+
+    public Animator anim;
 
     // Use this for initialization
     void Start()
@@ -43,21 +47,52 @@ public class Player : MonoBehaviour
     {
         HandleInput();
     }
+
     void FixedUpdate()
     {
-
-        float horizontal = Input.GetAxis("Horizontal");
+        //horizontal = Input.GetAxis("Horizontal");
+        Move(horizontal);
         isGrounded = IsGrounded();
 
         HandleMovement(horizontal);
         Flip(horizontal);
         HandleLayer();
         ResetValue();
-
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("flag1"))
+        {
+            gameObject.GetComponent<CompleteController>().ShowTheMenu();
+            //if (score >= scoremap1)
+            //{
+            //    scoremap1 = score;
+            //    PlayerPrefs.SetInt("scoremap1", scoremap1);
+
+            //    highscore = scoremap1;
+            //    PlayerPrefs.SetInt("highscore", highscore);
+            //}
+        }
+    }
+
+    public void Move(float input)
+    {
+        horizontal = input;
+    }
+
+    public void Jumping(bool jump)
+    {
+        isPressJump = jump;
+    }
+
+    public void ChangeGravity(bool isChange)
+    {
+        isPressChangeGravity = isChange;
+    }
+
     private void HandleMovement(float horizontal)
     {
-
         if (myRigibody.velocity.y < 0)
         {
             myAnimator.SetBool("Up", true);
@@ -75,10 +110,7 @@ public class Player : MonoBehaviour
                 isGrounded = false;
                 myRigibody.AddForce(new Vector2(0, -jumpForce));
                 myAnimator.SetTrigger("Jump");
-
             }
-
-
         }
 
 
@@ -86,6 +118,7 @@ public class Player : MonoBehaviour
         //{
         //    myRigibody.velocity = new Vector2(horizontal * movementSpeed, myRigibody.velocity.y);
         //}
+
         myRigibody.velocity = new Vector2(horizontal * movementSpeed, myRigibody.velocity.y); //  x=-1; y= 0
         if (myRigibody.gravityScale > 0)
         {
@@ -98,7 +131,6 @@ public class Player : MonoBehaviour
             }
         }
         myAnimator.SetFloat("Speed", Mathf.Abs(horizontal));
-
     }
 
     private void HandleInput()
@@ -118,14 +150,13 @@ public class Player : MonoBehaviour
 
 
         }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
 
-            jump = true;
-            
+        if (isPressJump == true)
+        {
+            jump = true;            
         }
 
-        if (Input.GetKeyDown(KeyCode.H))
+        if (isPressChangeGravity == true)
         {
             if (isReverse)
             {
@@ -148,6 +179,7 @@ public class Player : MonoBehaviour
 
         }
     }
+
     private void Flip(float horizontal)
     {
         if (horizontal > 0 && !facingRight || horizontal < 0 && facingRight)
@@ -159,10 +191,12 @@ public class Player : MonoBehaviour
 
         }
     }
+
     private void ResetValue()
     {
         jump = false;
     }
+
     private bool IsGrounded()
     {
         if (myRigibody.velocity.y <= 0)
