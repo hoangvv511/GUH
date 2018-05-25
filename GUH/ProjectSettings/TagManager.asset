@@ -9,6 +9,15 @@ TagManager:
   - duck
   - sound
   - spike
+  - Guard
+  - Union
+  - Turtle
+  - Frog
+  - Ground
+  - Wall
+  - Shoot
+  - Gun
+  - Range
   layers:
   - Default
   - TransparentFX
@@ -18,8 +27,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Ground
+  - Wall
   - 
   - 
   - 

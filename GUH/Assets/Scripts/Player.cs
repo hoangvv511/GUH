@@ -40,6 +40,8 @@ public class Player : MonoBehaviour
     public SoundManager sound;
     public float lifeTime = 2;
 
+    public static Vector3 move;
+
     // Use this for initialization
     void Start()
     {
@@ -65,6 +67,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        move = transform.position;
         if (myAnimator.GetBool("Die").Equals(true))
         {
             lifeTime -= Time.deltaTime;

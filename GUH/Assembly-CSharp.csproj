@@ -67,6 +67,15 @@
     <Compile Include="Assets\Scripts\Controller\PauseController.cs" />
     <Compile Include="Assets\Scripts\Controller\Scroll.cs" />
     <Compile Include="Assets\Scripts\Duck.cs" />
+    <Compile Include="Assets\Scripts\Enemy\bullet_down.cs" />
+    <Compile Include="Assets\Scripts\Enemy\bullet_left.cs" />
+    <Compile Include="Assets\Scripts\Enemy\bullet_right.cs" />
+    <Compile Include="Assets\Scripts\Enemy\bullet_up.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Frog.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Guard.cs" />
+    <Compile Include="Assets\Scripts\Enemy\gun.cs" />
+    <Compile Include="Assets\Scripts\Enemy\turtle.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Union.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
